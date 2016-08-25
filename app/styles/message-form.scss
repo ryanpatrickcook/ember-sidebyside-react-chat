@@ -1,0 +1,21 @@
+.message-form {
+  padding-top: 1px;
+  .message-input {
+    display: block;
+    float: left;
+    width: 80%;
+    height: 46px;
+    padding: 10px;
+    font-size: 114%;
+  }
+  .message-submit {
+    display: block;
+    float: right;
+    width: 20%;
+    height: 46px;
+    padding: 10px 0;
+    font-size: 114%;
+    border: 1px solid #DDD;
+    background-color: #FFF;
+  }
+}
