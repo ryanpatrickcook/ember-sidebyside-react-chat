@@ -1,7 +1,7 @@
 <div class="message-list-wrapper">
   <div class="message-list-content">
     {{#each messages as |msg|}}
-      <div>{{msg.text}}</div>
+      {{chat-message message=msg}}
     {{/each}}
   </div>
 </div>

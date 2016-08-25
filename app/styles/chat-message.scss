@@ -1,0 +1,31 @@
+.chat-message {
+  position: relative;
+  padding: 10px;
+  border-top: 1px dashed #D1D1D1;
+  font-size: 114%;
+  input {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    width: 90%;
+    height: 100%;
+    border: 1px solid #ddd;
+  }
+  .btn-edit-message {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #bbb;
+    &:hover {
+      color: blue;
+    }
+  }
+  &:hover {
+    .btn-edit-message {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{{#if isEditing}}
+  {{input type="text" value=editInput class="message-input" insert-newline="updateMessage"}}
+  <a class="btn-edit-message" {{action 'updateMessage'}}>Done</a>
+{{else}}
+  {{message.text}}
+  <a class="btn-edit-message" {{action 'editMessage'}}>Edit</a>
+{{/if}}
