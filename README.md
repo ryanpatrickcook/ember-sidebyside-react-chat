@@ -1,7 +1,6 @@
-# Ember-sidebyside-react-chat
+# ember-sidebyside-react-chat
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This project is used as a [side-by-side comparison with React](https://github.com/ryanpatrickcook/react-sidebyside-ember-chat) building out components.
 
 ## Prerequisites
 
@@ -15,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone git@github.com:ryanpatrickcook/ember-sidebyside-react-chat.git` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
@@ -24,6 +23,18 @@ You will need the following things properly installed on your computer.
 
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
+
+### Background
+
+Running the following setup the project and generated component files.
+
+* `npm install -g ember-cli`
+* `ember new ember-sidebyside-react-chat`
+* `ember install ember-cli-sass`
+* `ember g component chat-container`
+* `ember g component message-list`
+* `ember g component message-form`
+* `ember g component chat-message`
 
 ### Code Generators
 
@@ -50,4 +61,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
