@@ -2,16 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   classNames: ['message-list'],
-  messages: Ember.A([
-    {
-      id: 1,
-      text: 'hello world'
-    },
-    {
-      id: 2,
-      text: 'whatever'
-    }
-  ]),
+  messages: Ember.A([]),
 
   onMessagesChange: Ember.observer('messages.[]', function() {
     Ember.run.later(() => {

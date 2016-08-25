@@ -1,7 +1,16 @@
 import Ember from 'ember';
 
 export default Ember.Service.extend({
-  messages: Ember.A([]),
+  messages: Ember.A([
+    Ember.Object.create({
+      id: 1,
+      text: 'hello world'
+    }),
+    Ember.Object.create({
+      id: 2,
+      text: 'whatever'
+    })
+  ]),
 
   newMessage(message) {
     let msg = Ember.Object.create({
