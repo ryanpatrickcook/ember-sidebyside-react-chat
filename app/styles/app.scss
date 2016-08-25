@@ -1,0 +1,25 @@
+@import 'chat-container';
+
+* { box-sizing: border-box; }
+
+body {
+  background-color: #CCC;
+  #app {
+    font-family: Arial, sans-serif;
+    h1 {
+      color: green;
+    }
+  }
+}
+
+.clearfix:after {
+   visibility: hidden;
+   display: block;
+   font-size: 0;
+   content: " ";
+   clear: both;
+   height: 0;
+}
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
