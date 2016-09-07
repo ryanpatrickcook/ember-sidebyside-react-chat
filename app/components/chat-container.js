@@ -6,8 +6,9 @@ export default Ember.Component.extend({
   messages: Ember.computed.alias('messageStore.messages'),
   title: 'Application Title',
 
-  appTitle: Ember.computed('title', function() {
-    return `App: ${this.get('title')}`;
+  headingLabel: Ember.computed('title', 'messages.[]', function() {
+    let messageCount = this.get('messages.length');
+    return `App: ${this.get('title')} - (${messageCount})`;
   }),
 
   actions: {
